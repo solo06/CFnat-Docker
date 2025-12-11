@@ -232,10 +232,11 @@ docker exec 容器ID cat cfnat.log
   -task int
         最大并发请求数: 并发请求最大协程数 (default 100)
 ```
-version: '3'
 
 ### 创建 `docker-compose.yml`
 ```yml
+
+version: '3'
 
 services:
   cfnat:
@@ -262,6 +263,7 @@ services:
 
 # 致谢
 [gdfsnhsw](https://github.com/gdfsnhsw/CFnat-Docker)、[股神](https://t.me/CF_NAT/38840)、ChatGPT
+
 
 
 
