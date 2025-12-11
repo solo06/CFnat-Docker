@@ -133,6 +133,8 @@ docker run -d \
 
 - 使用`docker-compose.yml`同时启动**多个cfnat容器**
 ```yml
+
+
 version: '3'
 
 services:
@@ -232,6 +234,8 @@ docker exec 容器ID cat cfnat.log
 ```
 version: '3'
 
+### 创建 `docker-compose.yml`
+```yml
 services:
   cfnat:
     container_name: mycfnat
@@ -253,7 +257,9 @@ services:
     #ports:
      # - "1234:1234"  # 将主机的 1234 端口映射到容器的 1234 端口
     restart: always
+```
 
 # 致谢
 [gdfsnhsw](https://github.com/gdfsnhsw/CFnat-Docker)、[股神](https://t.me/CF_NAT/38840)、ChatGPT
+
 
